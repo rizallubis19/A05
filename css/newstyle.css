@@ -42,7 +42,7 @@ nav {
   text-align: center;
   position: fixed;
   /* border-bottom: 1px solid #b1b1b1; */
-  animation: 5s gradient linear infinite;;
+  animation: 5s gradient linear infinite;
   line-height: 60px;
   width: 100%;
   /* transition: background-color 0.5 ease; */
@@ -50,11 +50,19 @@ nav {
   transition: 0.3s;
 }
 
-@keyframes gradient{
-	0%   {border-bottom: 5px #b1b1b1 solid;}
-  25%  {border-bottom: 5px #C86B85 solid;}
-  50%  {border-bottom: 5px #6c90bd solid;}
-  100% {border-bottom: 5px #568153 solid;}
+@keyframes gradient {
+  0% {
+    border-bottom: 5px #b1b1b1 solid;
+  }
+  25% {
+    border-bottom: 5px #c86b85 solid;
+  }
+  50% {
+    border-bottom: 5px #f44336 solid;
+  }
+  100% {
+    border-bottom: 5px burlywood solid;
+  }
 }
 
 /* kelas putih */
@@ -125,15 +133,21 @@ header .intro {
   position: relative;
   top: 50%;
 }
-/* untuk h3 */
+/* untuk Teks Intro */
 header .intro h3 {
   font-size: 50px;
+  margin: 0;
+  padding-bottom: 35px;
+  color: burlywood;
+}
+header .intro h5 {
+  font-size: 15px;
   margin: 0;
   padding-bottom: 15px;
   color: burlywood;
 }
 header .intro p {
-  font-size: 18px;
+  font-size: 20px;
   padding-bottom: 15px;
   color: burlywood;
 }
@@ -324,7 +338,7 @@ section.quote .layar-dalam p {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 .fas-col img {
@@ -389,6 +403,9 @@ section.quote .layar-dalam p {
 .blog .area .text article h4 {
   margin: 0px;
 }
+.blog .area .text article p {
+  font-size: 12px;
+}
 .blog .area .text article a {
   color: #333;
   text-decoration: none;
@@ -412,7 +429,7 @@ section.quote .layar-dalam p {
   margin-bottom: 5%;
   margin-right: 25px;
   text-align: left;
-  background: #F6E7D8;
+  background: #f6e7d8;
   padding: 25px;
   cursor: pointer;
   display: flex;
@@ -463,4 +480,16 @@ footer .layar-dalam .copyright {
   padding-top: 30px;
   border-top: 1px solid #666;
   text-align: center;
+}
+
+footer .layar-dalam .fa-brands,
+.fa-solid {
+  color: #f44336;
+  font-size: 25px;
+  padding-right: 35px;
+  padding-top: 20px;
+}
+footer .layar-dalam div a {
+  text-decoration: none;
+  color: #f44336;
 }
